@@ -25,8 +25,8 @@ sys.path.append(os.path.abspath("_ext"))
 
 # -- Project information -----------------------------------------------------
 
-project = "KISS documentatie"
-copyright = "2024"
+project = "ITA documentatie"
+copyright = "2025"
 # # author = objects.__author__
 
 # The full version, including alpha/beta/rc tags
@@ -42,7 +42,7 @@ copyright = "2024"
 # gekopieerd uit Openzaak: "sphinx.ext.todo","recommonmark","sphinx_markdown_tables","sphinx_tabs.tabs"
 
 extensions = [
-    "sphinx_rtd_theme",
+   
     "myst_parser",
     "sphinx.ext.todo",
 ]
