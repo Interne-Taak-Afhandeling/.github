@@ -1,4 +1,5 @@
-===================
+.. _config_omgevingsvariabelen:
+
 Omgevingsvariabelen
 ===================
 

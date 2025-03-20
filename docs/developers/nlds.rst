@@ -4,7 +4,8 @@ NLDS - NL Design System
 
 De interface van de applicatie is opgebouwd met componenten uit het **NL Design System (NLDS)**. Dit is een verzameling ontwerp- en ontwikkelrichtlijnen voor digitale overheidsdiensten in Nederland. Door gebruik te maken van NLDS-componenten blijft de gebruikerservaring consistent en toegankelijk, in lijn met de standaarden van de overheid.
 
-🔗 Meer informatie: `Introductie NLDS <https://nldesignsystem.nl/handboek/introductie>`_
+🔗 `Introductie NLDS <https://nldesignsystem.nl/handboek/introductie/>`_
+🔗 `NLDS voor developers <https://nldesignsystem.nl/handboek/developer/overzicht/>`_
 
 
 Aanpasbaarheid voor gemeentes
@@ -74,6 +75,6 @@ Ter referentie `ita-theme <./InterneTaakAfhandeling.Web.Client/src/assets/_mixin
 
 
 Test Theme
----------
+----------
 
-In de `public` folder van de ITA Web.Client applicatie staan een `test-theme.css` en een `test-logo.svg`. Deze bestanden kunnen ter inspratie dienen voor de ontwikkeling van het theme in de eigen gemeentehuisstijl.
+In de `public` folder van de ITA Web.Client applicatie staan `test-theme.css` en `test-logo.svg`. Om de installatie van de applicatie te testen kunnen verwijzingen naar deze bestanden worden gebruikt bij de configuratie van de omgevingsvariabelen. **Let op:** deze verwijzingen moeten absolute URL's zijn, zie :ref:`config_omgevingsvariabelen`. De test-theme-bestanden kunnen daarnaast ter inspratie dienen voor het aansluiten van de tokens van de eigen gemeentehuisstijl.
