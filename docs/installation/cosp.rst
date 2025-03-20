@@ -1,4 +1,3 @@
-==============================
 Cross-Origin Security Policies
 ==============================
 
@@ -8,7 +7,7 @@ Alleen moet vanwege COEP voor het favicon ook de Cross-Origin-Resource-Policy-he
 
 
 Headers
-=======
+-------
 
 Voor alle externe resources moet `Access-Control-Allow-Origin: *` of bijvoorbeeld `Access-Control-Allow-Origin: *.mijn-gemeente.nl` ingesteld worden.
 
