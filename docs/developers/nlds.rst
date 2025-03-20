@@ -77,4 +77,23 @@ Ter referentie `ita-theme <./InterneTaakAfhandeling.Web.Client/src/assets/_mixin
 Test Theme
 ----------
 
-In de `public` folder van de ITA Web.Client applicatie staan `test-theme.css` en `test-logo.svg`. Om de installatie van de applicatie te testen kunnen verwijzingen naar deze bestanden worden gebruikt bij de configuratie van de omgevingsvariabelen. **Let op:** deze verwijzingen moeten absolute URL's zijn, zie :ref:`config_omgevingsvariabelen`. De test-theme-bestanden kunnen daarnaast ter inspratie dienen voor het aansluiten van de tokens van de eigen gemeentehuisstijl.
+In de `public` folder van de ITA Web.Client applicatie staan `test-theme.css` en `test-logo.svg`. Om de installatie van de applicatie te testen kunnen verwijzingen naar deze bestanden worden gebruikt bij de configuratie van de omgevingsvariabelen. **Let op:** deze verwijzingen moeten absolute URL's zijn, zie :ref:`config_omgevingsvariabelen`.
+
+.. code-block:: none
+
+    "THEME_NAAM": "test-theme",
+    "LOGO_URL": "https://<host>/test-logo.svg",
+    "DESIGN_TOKENS_URL": "https://<host>/test-theme.css"
+
+
+De test-theme bestanden kunnen daarnaast gebruikt worden om in een ontwikkelomgeving wat custom waardes te testen.
+
+.. code-block:: none
+
+    .test-theme {
+        // utrecht
+        --utrecht-link-color: #333; // custom waarde
+
+        // ita
+        --ita-dashboard-tables-column-gap: 2rem; // custom waarde
+    }
