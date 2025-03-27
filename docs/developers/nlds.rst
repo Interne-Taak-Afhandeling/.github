@@ -23,9 +23,8 @@ Op dit moment is de implementatie gebaseerd op alleen het Utrecht Design System,
 Gebruikte CSS-componenten
 -------------------------
 
-
 =============================================  ================================================================================================================================
-Component                                      Storybook
+**Component**                                  **Storybook**
 ---------------------------------------------  --------------------------------------------------------------------------------------------------------------------------------
 **Document** (`utrecht-document`)              `🔗 Design Tokens <https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-document--design-tokens>`_
 **Surface** (`utrecht-surface`)                `🔗 Design Tokens <https://nl-design-system.github.io/utrecht/storybook/?path=/story/css_css-surface--design-tokens>`_
