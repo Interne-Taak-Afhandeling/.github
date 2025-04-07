@@ -10,3 +10,4 @@ ITA installatie instructies
    config.rst
    cosp.rst
    nlds.rst
+   configuratie.md
