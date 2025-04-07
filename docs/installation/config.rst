@@ -4,7 +4,41 @@ Omgevingsvariabelen
 ===================
 
 
-Theming variabelen
+Notificatie settings
+---------------------------------
+
+| **Variabele**                      | **Waarde**                                                                                                  |
+|------------------------------------|----------------------------------------------------------------------------------------------------------|
+| Email_SmtpSettings_Host            | Adres van uw mailserver                                                                                  |
+| Email_SmtpSettings_Port            | De poort waarover van uw mailserver benaderbaar is                                                      |
+| Email_SmtpSettings_Username        | Credentials voor toegang tot uw mailserver                                                               |
+| Email_SmtpSettings_Password        | Credentials voor toegang tot uw mailserver                                                               |
+| Email_SmtpSettings_EnableSsl       | true/false                                                                                                |
+| Email_SmtpSettings_FromEmail       | Afzenderadres voor mails die door ITA verstuurd worden                                                   |
+| InternetakenNotifier_HourThreshold | Uurgrens voor meldingen. Contactverzoeken jonger dan deze waarde (in uren) krijgen periodiek notificaties |
+
+ 
+Koppelingen met externe registers
+---------------------------------
+
+ITA gaat ervan uit dat emailadressen van medewerkers en organisatorische eenheden in een overige objecten registratie te vinden zijn en voldoen aan deze formats:
+medewerker: https://github.com/open-objecten/objecttypes/blob/main/community-concepts/Medewerker/medewerker-schema.json
+groep: https://github.com/open-objecten/objecttypes/blob/main/community-concepts/Afdeling%20en%20Groep/groep-schema.json
+afdeling:  https://github.com/open-objecten/objecttypes/blob/main/community-concepts/Afdeling%20en%20Groep/afdeling-schema.json
+
+| **Variabele**                      | **Waarde**                                                                                                  |
+|------------------------------------|----------------------------------------------------------------------------------------------------------|
+| ObjectApi_BaseUrl | https://uw-overige-objecten-adres.nl/api/v2/  |
+| ObjectApi_ApiKey | min. 32 karakters  |
+| OpenKlantApi_BaseUrl | https://uw-openklant-adres/klantinteracties/api/v1/  |
+| OpenKlantApi_ApiKey | min. 32 karakters  |
+| ZaakSysteem_BaseUrl |  https://uw-zaaksysteem-adres.nl |
+| ZaakSysteem_ClientId |   |
+| ZaakSysteem_Key |  min. 32 karakters |
+
+
+
+Theming
 ------------------
 
 ==================================  =============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
