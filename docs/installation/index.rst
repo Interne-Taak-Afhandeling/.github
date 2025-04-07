@@ -1,7 +1,7 @@
 Installatie
 ===========
 
-ITA draait in een Kubernetes cluster. ...
+ITA installatie instructies
 
 .. toctree::
    :maxdepth: 1
