@@ -22,9 +22,9 @@ Koppelingen met externe registers
 ---------------------------------
 
 ITA gaat ervan uit dat emailadressen van medewerkers en organisatorische eenheden in een overige objecten registratie te vinden zijn en voldoen aan deze formats:
-medewerker: https://github.com/open-objecten/objecttypes/blob/main/community-concepts/Medewerker/medewerker-schema.json
-groep: https://github.com/open-objecten/objecttypes/blob/main/community-concepts/Afdeling%20en%20Groep/groep-schema.json
-afdeling:  https://github.com/open-objecten/objecttypes/blob/main/community-concepts/Afdeling%20en%20Groep/afdeling-schema.json
+- medewerker: https://github.com/open-objecten/objecttypes/blob/main/community-concepts/Medewerker/medewerker-schema.json
+- groep: https://github.com/open-objecten/objecttypes/blob/main/community-concepts/Afdeling%20en%20Groep/groep-schema.json
+- afdeling:  https://github.com/open-objecten/objecttypes/blob/main/community-concepts/Afdeling%20en%20Groep/afdeling-schema.json
 
 | **Variabele**                      | **Waarde**                                                                                                  |
 |------------------------------------|----------------------------------------------------------------------------------------------------------|
@@ -41,13 +41,12 @@ afdeling:  https://github.com/open-objecten/objecttypes/blob/main/community-conc
 Theming
 ------------------
 
-==================================  =============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
-**Variabele**                       **Omschrijving**
-----------------------------------  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-``RESOURCES:LOGO_URL``              publiek URL waar het logo van de gemeente beschikbaar is, bijvoorbeeld: ``https://www.mijn-gemeente.nl/logo.svg``
-``RESOURCES:FAVICON_URL``           publiek URL waar het favicon van de gemeente beschikbaar is, bijvoorbeeld: ``https://www.mijn-gemeente.nl/favicon.ico``
-``RESOURCES:DESIGN_TOKENS_URL``     publiek URL waar het css-bestand met NL Design System tokens beschikbaar is, om de applicatie te stylen in gemeentehuisstijl, bijvoorbeeld: ``https://unpkg.com/@gemeente/design-tokens/dist/index.css``
-``RESOURCES:WEB_FONT_SOURCES``      publiek URL - of meerdere door spaties gescheiden publieke URL's - als verwijzing naar web-font-bestand(en) horend bij de gemeentehuisstijl, bijvoorbeeld: ``https://fonts.mijn-gemeente.nl/custom-regular-font.woff2 https://fonts.mijn-gemeente.nl/custom-bold-font.woff2``. Een enkele verwijzing naar de locatie waar alle font-style-bestanden staan kan ook: ``https://fonts.mijn-gemeente.nl/custom-font/``. **Let op:** deze configuratie is alleen bedoeld om de font-bestanden onder CORS te kunnen inladen. Verwijzingen naar bestanden zullen ook in de theme styling onder een @font-face ruleset gespecificeerd moeten worden.
-==================================  =============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+| Variabele                       | Omschrijving |
+|--------------------------------|--------------|
+| LOGO_URL          | Publiek URL waar het logo van de gemeente beschikbaar is, bijvoorbeeld: `https://www.mijn-gemeente.nl/logo.svg` |
+| FAVICON_URL       | Publiek URL waar het favicon van de gemeente beschikbaar is, bijvoorbeeld: `https://www.mijn-gemeente.nl/favicon.ico` |
+| DESIGN_TOKENS_URL  | Publiek URL waar het CSS-bestand met NL Design System tokens beschikbaar is, om de applicatie te stylen in gemeentehuisstijl, bijvoorbeeld: `https://unpkg.com/@gemeente/design-tokens/dist/index.css` |
+| WEB_FONT_SOURCES   | Publiek URL – of meerdere door spaties gescheiden publieke URL's – als verwijzing naar web-font-bestand(en) horend bij de gemeentehuisstijl, bijvoorbeeld: `https://fonts.mijn-gemeente.nl/custom-regular-font.woff2 https://fonts.mijn-gemeente.nl/custom-bold-font.woff2`. Een enkele verwijzing naar de locatie waar alle font-style-bestanden staan kan ook: `https://fonts.mijn-gemeente.nl/custom-font/`. **Let op:** deze configuratie is alleen bedoeld om de font-bestanden onder CORS te kunnen inladen. Verwijzingen naar bestanden zullen ook in de theme styling onder een `@font-face` ruleset gespecificeerd moeten worden. |
+
 
 Deze theming variabelen zijn allemaal optioneel.
