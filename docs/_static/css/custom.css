@@ -1,3 +1,6 @@
+@import '../sphinx_rtd_theme.css
+
+
 .rst-content h2{
   color: #f60 !important;
 }
