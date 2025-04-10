@@ -37,6 +37,14 @@ ITA gaat ervan uit dat emailadressen van medewerkers en organisatorische eenhede
 | ZaakSysteem_Key |  min. 32 karakters |
 
 
+Database configuratie
+---------------------------------
+| **Variabele**                      | **Waarde**                                                                                                  |
+|------------------------------------|----------------------------------------------------------------------------------------------------------|
+| Database_Name            | Naam van de database voor ITA                                                         |
+| Database_Username        | Gebruikersnaam voor toegang tot de database                                           |
+| Database_Password        | Wachtwoord voor toegang tot de database                                               |
+| Database_Host            | Hostnaam van de database server *(optioneel - alleen nodig als `postgresql.enabled=false`)* |
 
 Theming
 ------------------
