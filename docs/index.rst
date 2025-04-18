@@ -11,3 +11,4 @@ Het Interne Taak Afhandeling component (ITA) is een applicatie waarmee contactve
 
    installation/index
    developers/index
+   decision-record/index
