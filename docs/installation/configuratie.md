@@ -26,7 +26,6 @@ Notificatie settings
 | internetaakafhandeling-poller.config.smtp.password        | Credentials voor toegang tot uw mailserver                                                               |
 | internetaakafhandeling-poller.config.smtp.enableSsl       | true/false                                                                                                |
 | internetaakafhandeling-poller.config.smtp.fromEmail       | Afzenderadres voor mails die door ITA verstuurd worden                                                   |
-| internetaakafhandeling-poller.config.internetakenNotifier.hourThreshold | Uurgrens voor meldingen. Contactverzoeken jonger dan deze waarde (in uren) krijgen periodiek notificaties |
 
  
 Koppelingen met externe registers
