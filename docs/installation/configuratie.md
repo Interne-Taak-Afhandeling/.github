@@ -14,7 +14,7 @@ OpenID Connect settings
 | web.oidc.nameClaimType            | De naam van de claim in het JWT token van de OpenID Connect Provider waarin de volledige naam van de ingelogde gebruiker staat <br/> (default waarde is `name`) |
 | web.oidc.roleClaimType            | De naam van de claim in het JWT token van de OpenID Connect Provider waarin de rollen van de ingelogde gebruiker staan. <br/> (default waarde is `roles`)  |
 | web.oidc.idClaimType            | De naam van de claim in het JWT token van de OpenID Connect Provider waarin de unieke identificatie van de ingelogde gebruiker staat. <br/> (default waarde is `preferred_username`)   |
-| web.oidc.emailClaimType            | De naam van de claim in het JWT token van de OpenID Connect Provider waarin de unieke identificatie van de ingelogde gebruiker staat. <br/> (default waarde is `email`)   |
+| web.oidc.emailClaimType            | De naam van de claim in het JWT token van de OpenID Connect Provider waarin het e-mailadres van de ingelogde gebruiker staat. <br/> (default waarde is `email`)   |
 
 Notificatie settings
 ---------------------------------
@@ -62,10 +62,10 @@ Theming
 
 | Variabele                       | Omschrijving |
 |--------------------------------|--------------|
-| web.resources.logoUrl          | Publiek URL waar het logo van de gemeente beschikbaar is, bijvoorbeeld: `https://www.mijn-gemeente.nl/logo.svg` |
-| web.resources.faviconUrl       | Publiek URL waar het favicon van de gemeente beschikbaar is, bijvoorbeeld: `https://www.mijn-gemeente.nl/favicon.ico` |
-| web.resources.designTokensUrl  | Publiek URL waar het CSS-bestand met NL Design System tokens beschikbaar is, om de applicatie te stylen in gemeentehuisstijl, bijvoorbeeld: `https://unpkg.com/@gemeente/design-tokens/dist/index.css` |
-| web.resources.webFontSources   | Publiek URL – of meerdere door spaties gescheiden publieke URL's – als verwijzing naar web-font-bestand(en) horend bij de gemeentehuisstijl, bijvoorbeeld: `https://fonts.mijn-gemeente.nl/custom-regular-font.woff2 https://fonts.mijn-gemeente.nl/custom-bold-font.woff2`. Een enkele verwijzing naar de locatie waar alle font-style-bestanden staan kan ook: `https://fonts.mijn-gemeente.nl/custom-font/`. **Let op:** deze configuratie is alleen bedoeld om de font-bestanden onder CORS te kunnen inladen. Verwijzingen naar bestanden zullen ook in de theme styling onder een `@font-face` ruleset gespecificeerd moeten worden. |
+| web.resources.logoUrl          | Publieke URL waar het logo van de gemeente beschikbaar is, bijvoorbeeld: `https://www.mijn-gemeente.nl/logo.svg` |
+| web.resources.faviconUrl       | Publieke URL waar het favicon van de gemeente beschikbaar is, bijvoorbeeld: `https://www.mijn-gemeente.nl/favicon.ico` |
+| web.resources.designTokensUrl  | Publieke URL waar het CSS-bestand met NL Design System tokens beschikbaar is, om de applicatie te stylen in gemeentehuisstijl, bijvoorbeeld: `https://unpkg.com/@gemeente/design-tokens/dist/index.css` |
+| web.resources.webFontSources   | Publieke URL – of meerdere door spaties gescheiden publieke URL's – als verwijzing naar web-font-bestand(en) horend bij de gemeentehuisstijl, bijvoorbeeld: `https://fonts.mijn-gemeente.nl/custom-regular-font.woff2 https://fonts.mijn-gemeente.nl/custom-bold-font.woff2`. Een enkele verwijzing naar de locatie waar alle font-style-bestanden staan kan ook: `https://fonts.mijn-gemeente.nl/custom-font/`. **Let op:** deze configuratie is alleen bedoeld om de font-bestanden onder CORS te kunnen inladen. Verwijzingen naar bestanden zullen ook in de theme styling onder een `@font-face` ruleset gespecificeerd moeten worden. |
 
 
 Deze theming variabelen zijn allemaal optioneel.
