@@ -13,7 +13,7 @@ OpenID Connect settings
 | web.oidc.itaSystemAccessRole            | De waarde van de role claim in het JWT token van de OpenID Connect Provider voor toegang tot ITA <details> <summary>Meer informatie </summary>Bijvoorbeeld: `ITA-Gebruiker` </details>     |
 | web.oidc.nameClaimType            | De naam van de claim in het JWT token van de OpenID Connect Provider waarin de volledige naam van de ingelogde gebruiker staat <br/> (default waarde is `name`) |
 | web.oidc.roleClaimType            | De naam van de claim in het JWT token van de OpenID Connect Provider waarin de rollen van de ingelogde gebruiker staan. <br/> (default waarde is `roles`)  |
-| web.oidc.idClaimType            | De naam van de claim in het JWT token van de OpenID Connect Provider waarin de unieke identificatie van de ingelogde gebruiker staat. <br/> (default waarde is `preferred_username`)   |
+| web.oidc.objectregisterMedewerkerIdClaimType            | De naam van de claim in het JWT token van de OpenID Connect Provider waarin een unieke identificatie van de ingelogde gebruiker staat die overeenkomt met het attribuut `identificatie` van de medewerker in het medewerker register (OverigeObjecten).  |
 | web.oidc.emailClaimType            | De naam van de claim in het JWT token van de OpenID Connect Provider waarin het e-mailadres van de ingelogde gebruiker staat. <br/> (default waarde is `email`)   |
 
 Notificatie settings
