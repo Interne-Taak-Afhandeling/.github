@@ -28,6 +28,7 @@ Notificatie settings
 | poller.smtp.enableSsl       | true/false                                                                                                |
 | poller.smtp.fromEmail       | Afzenderadres voor mails die door ITA verstuurd worden                                                   |
 
+
  
 Koppelingen met externe registers
 ---------------------------------
