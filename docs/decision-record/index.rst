@@ -41,6 +41,7 @@ Koppelen van zaken bij contactverzoeken
 Het OpenKlant-model staat in principe toe dat er meer dan één Zaak gekoppeld is aan een Contactverzoek (via een ``onderwerpobject`` bij het ``klantcontact`` van het Contactverzoek). ITA ondersteunt dit op dit moment niet. De kans dat dit voorkomt is zeer klein. In de oorspronkelijke opzet van Klantinteracties was het idee dat elke ``klantcontact`` één Onderwerp heeft. Dit maakt meerdere ``onderwerpobjecten`` onwaarschijnlijk. 
 
 Dus bij het koppelen van een Zaak aan een Contactverzoek hebben we gekozen voor:
+
 * Als een gebruiker een Zaak koppelt aan een Contactverzoek, creëert ITA een ``onderwerpobject``
 * Als er al een Zaak gekoppeld is, dan vervangt ITA de eerder gekoppelde Zaak door de nieuw gekoppelde Zaak
 * Als het voorkomt dat er al 2 of meer Zaken zijn gekoppeld aan een Contactverzoek, dan is het niet mogelijk om een Zaakkoppeling te leggen of aan te passen. In dat geval verschijnt er een melding: "Er iS een fout opgetreden bij het koppelen van de zaak: Het koppelen van een nieuwe zaak wordt niet ondersteund omdat er al meerdere zaken gekoppeld zijn aan dit contactverzoek."
