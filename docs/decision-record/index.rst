@@ -45,3 +45,11 @@ Dus bij het koppelen van een Zaak aan een Contactverzoek hebben we gekozen voor:
 * Als een gebruiker een Zaak koppelt aan een Contactverzoek, creëert ITA een ``onderwerpobject``
 * Als er al een Zaak gekoppeld is, dan vervangt ITA de eerder gekoppelde Zaak door de nieuw gekoppelde Zaak
 * Als het voorkomt dat er al 2 of meer Zaken zijn gekoppeld aan een Contactverzoek, dan is het niet mogelijk om een Zaakkoppeling te leggen of aan te passen. In dat geval verschijnt er een melding: "Er is een fout opgetreden bij het koppelen van de zaak: Het koppelen van een nieuwe zaak wordt niet ondersteund omdat er al meerdere zaken gekoppeld zijn aan dit contactverzoek."
+
+Contactverzoek sluiten
+========================================
+**Probleem**: Er is nog geen duidelijke visie over wie wat wel/niet zou moeten kunnen doen met een afgesloten contactverzoek.
+
+* Keuze: Het contactverzoek krijgt de status verwerkt. Hij verdwijnt daarmee uit alle lijsten van openstaande contactverzoeken. Als men hem op een andere manier benadert (rechtstreeks via de url, of uit een lijst met gesloten contactverzoeken), dan kan je er precies hetzelfde mee als met een openstaand contactverzoek.
+
+* Overwegingen: Scenario's waarbij men bijvoorbeeld per ongeluk het verkeerde contactmoment sloot, nog iets vergat toe te voegen, of achteraf een fout ontdekt, etc, zijn reëel. Het zou zeer onpraktisch zijn als men geen mogelijk had om een gesloten contactverzoek nog te kunnen bewerken.
