@@ -11,15 +11,8 @@ In een interne database wordt bijgehouden wat de aanmaak datum/tijd is van het c
 
 Er is voor gekozen om (voorlopig) geen gebruik te maken van de notificatie mogelijkheden in OpenKlant als alternatief voor de poller. De reden daarvoor was dat de mogelijkheden en beperkingen van het notificeren vanuit OpenKlant niet tijdig voldoende helder gemaakt konden worden.  
 
-Tonen van digitale adressen
-------------------------------
-
-Bij een Contactverzoek worden de contactgegevens van de klant opgeslagen in ``digitaleAdressen`` die verstrekt zijn door de betrokkene van het Klantcontact. 
-De interface van ITA gaat uit van 1 of 2 telefoonnummers, en 1 e-mailadres. 
-Omdat bij de telefoonnummers, zeker een tweede telefoonnummer, een omschrijving opgeslagen kan zijn die door de klant is doorgegeven, gebruiken we voor de labels van telefoonnummers de waarde van ``digitaalAdres.omschrijving``. Voor het e-mailadres doen we dat niet.  
-
 Koppelen van contactmomenten bij contactverzoeken
-------------------------------------------------------------
+-------------------------------------------------
 
 Het datamodel staat niet toe dat een contactmoment (klantcontact) dat voortkomt uit een contactverzoek (interne taak) wordt gekoppeld aan die interne taak.
 Het contactmoment kan alleen, via een onderwerpobject, gekoppeld worden aan een eerder contactmoment. Daarbij hebben we twee keuzes moeten maken. (gerelateerd aan issue #13)
@@ -35,6 +28,12 @@ Het contactmoment kan alleen, via een onderwerpobject, gekoppeld worden aan een 
 * Overwegingen: We hadden erop kunnen gokken dat de items altijd door de API in de zelfde volgorde van moment van aanmaken geretourneerd worden, maar daar worden geen garanties voor gegeven. Of we zouden kunnen sorteren op datum, maar aangezien de datum geen verplicht veld is leek dat ook geen stabiele betrouwbare oplossing. de gekozen oplossing is omslachtig, maar lijkt wel de veiligste oplossing.
 
 
+Tonen van digitale adressen
+---------------------------------
+
+Bij een Contactverzoek worden de contactgegevens van de klant opgeslagen in ``digitaleAdressen`` die verstrekt zijn door de betrokkene van het Klantcontact. 
+De interface van ITA gaat uit van 1 of 2 telefoonnummers, en 1 e-mailadres. 
+Omdat bij de telefoonnummers, zeker een tweede telefoonnummer, een omschrijving opgeslagen kan zijn die door de klant is doorgegeven, gebruiken we voor de labels van telefoonnummers de waarde van ``digitaalAdres.omschrijving``. Voor het e-mailadres doen we dat niet.  
 
 Koppelen van zaken bij contactverzoeken
 ---------------------------------------------
@@ -46,3 +45,12 @@ Dus bij het koppelen van een Zaak aan een Contactverzoek hebben we gekozen voor:
 * Als een gebruiker een Zaak koppelt aan een Contactverzoek, creëert ITA een ``onderwerpobject``
 * Als er al een Zaak gekoppeld is, dan vervangt ITA de eerder gekoppelde Zaak door de nieuw gekoppelde Zaak
 * Als het voorkomt dat er al 2 of meer Zaken zijn gekoppeld aan een Contactverzoek, dan is het niet mogelijk om een Zaakkoppeling te leggen of aan te passen. In dat geval verschijnt er een melding: "Er is een fout opgetreden bij het koppelen van de zaak: Het koppelen van een nieuwe zaak wordt niet ondersteund omdat er al meerdere zaken gekoppeld zijn aan dit contactverzoek."
+
+Contactverzoek sluiten
+---------------------------------------------
+
+**Probleem**: Er is nog geen duidelijke visie op wat een gebruiker zou moeten kunnen doen met met een afgesloten contactverzoek. Ook niet op welk type gebruiker dit zou mogen doen.
+
+* Keuze: Het contactverzoek krijgt, bij het afsluiten m.b.v. de knop "Opslaan & afronden", de status ``verwerkt``. Het verdwijnt daarmee uit alle lijsten van openstaande contactverzoeken. Als men het op een andere manier benadert (rechtstreeks via de url, of uit een lijst met gesloten contactverzoeken), dan kan je er op dit moment precies hetzelfde mee als met een openstaand contactverzoek.
+
+* Overwegingen: Scenario's waarbij men bijvoorbeeld per ongeluk het verkeerde contactmoment sluitt, vergeet nog iets toe te voegen, achteraf een fout ontdekt, etc, zijn reëel. Het zou zeer onpraktisch zijn als men geen mogelijk had om een gesloten contactverzoek nog te kunnen bewerken.
