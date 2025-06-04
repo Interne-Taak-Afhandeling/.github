@@ -53,7 +53,7 @@ ITA Theme
 
 Naast de bovenstaande componenten bestaat de interface van de applicatie ook uit verschillende custom componenten en elementen. Deze (ita) componenten en elementen kunnen via een aantal voorgedefinieerde css-variabelen worden aangepast voor een uniforme uitstraling binnen de huisstijl van de gemeente.
 
-Ter referentie `ita-theme <./InterneTaakAfhandeling.Web.Client/src/assets/_mixin-theme.scss>`_.
+Ter referentie `ita-theme <https://github.com/Interne-Taak-Afhandeling/ITA/blob/main/InterneTaakAfhandeling.Web.Client/src/assets/_mixin-theme.scss>`_.
 
 
 Test Theme
