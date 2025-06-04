@@ -28,13 +28,6 @@ Het contactmoment kan alleen, via een onderwerpobject, gekoppeld worden aan een 
 * Overwegingen: We hadden erop kunnen gokken dat de items altijd door de API in de zelfde volgorde van moment van aanmaken geretourneerd worden, maar daar worden geen garanties voor gegeven. Of we zouden kunnen sorteren op datum, maar aangezien de datum geen verplicht veld is leek dat ook geen stabiele betrouwbare oplossing. de gekozen oplossing is omslachtig, maar lijkt wel de veiligste oplossing.
 
 
-Tonen van digitale adressen
----------------------------------
-
-Bij een Contactverzoek worden de contactgegevens van de klant opgeslagen in ``digitaleAdressen`` die verstrekt zijn door de betrokkene van het Klantcontact. 
-De interface van ITA gaat uit van 1 of 2 telefoonnummers, en 1 e-mailadres. 
-Omdat bij de telefoonnummers, zeker een tweede telefoonnummer, een omschrijving opgeslagen kan zijn die door de klant is doorgegeven, gebruiken we voor de labels van telefoonnummers de waarde van ``digitaalAdres.omschrijving``. Voor het e-mailadres doen we dat niet.  
-
 Koppelen van zaken bij contactverzoeken
 ---------------------------------------------
 
@@ -45,6 +38,15 @@ Dus bij het koppelen van een Zaak aan een Contactverzoek hebben we gekozen voor:
 * Als een gebruiker een Zaak koppelt aan een Contactverzoek, creëert ITA een ``onderwerpobject``
 * Als er al een Zaak gekoppeld is, dan vervangt ITA de eerder gekoppelde Zaak door de nieuw gekoppelde Zaak
 * Als het voorkomt dat er al 2 of meer Zaken zijn gekoppeld aan een Contactverzoek, dan is het niet mogelijk om een Zaakkoppeling te leggen of aan te passen. In dat geval verschijnt er een melding: "Er is een fout opgetreden bij het koppelen van de zaak: Het koppelen van een nieuwe zaak wordt niet ondersteund omdat er al meerdere zaken gekoppeld zijn aan dit contactverzoek."
+
+
+Tonen van digitale adressen
+---------------------------------
+
+Bij een Contactverzoek worden de contactgegevens van de klant opgeslagen in ``digitaleAdressen`` die verstrekt zijn door de betrokkene van het Klantcontact. 
+De interface van ITA gaat uit van 1 of 2 telefoonnummers, en 1 e-mailadres. 
+Omdat bij de telefoonnummers, zeker een tweede telefoonnummer, een omschrijving opgeslagen kan zijn die door de klant is doorgegeven, gebruiken we voor de labels van telefoonnummers de waarde van ``digitaalAdres.omschrijving``. Voor het e-mailadres doen we dat niet.  
+
 
 Contactverzoek sluiten
 ---------------------------------------------
