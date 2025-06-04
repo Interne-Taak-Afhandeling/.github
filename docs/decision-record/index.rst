@@ -55,4 +55,4 @@ Contactverzoek sluiten
 
 * Keuze: Het contactverzoek krijgt, bij het afsluiten m.b.v. de knop "Opslaan & afronden", de status ``verwerkt``. Het verdwijnt daarmee uit alle lijsten van openstaande contactverzoeken. Als men het op een andere manier benadert (rechtstreeks via de url, of uit een lijst met gesloten contactverzoeken), dan kan je er op dit moment precies hetzelfde mee als met een openstaand contactverzoek.
 
-* Overwegingen: Scenario's waarbij men bijvoorbeeld per ongeluk het verkeerde contactmoment sluitt, vergeet nog iets toe te voegen, achteraf een fout ontdekt, etc, zijn reëel. Het zou zeer onpraktisch zijn als men geen mogelijk had om een gesloten contactverzoek nog te kunnen bewerken.
+* Overwegingen: Scenario's waarbij men bijvoorbeeld per ongeluk het verkeerde contactmoment sluit, vergeet nog iets toe te voegen, achteraf een fout ontdekt, etc, zijn reëel. Het zou zeer onpraktisch zijn als men geen mogelijk had om een gesloten contactverzoek nog te kunnen bewerken.
