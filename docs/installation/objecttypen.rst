@@ -3,7 +3,7 @@ Objecttypen
 ===========
 
 ITA slaat de history rondom de afhandeling van een internetaak op in de Objecten API.
-Hiertoe wordt het onderstaande Logboek objecttype gebruikt. 
+Hiertoe wordt het onderstaande logboek objecttype gebruikt. 
 Bij de installatie van ITA moet men ervoor zorgen dat dit objecttype aanwezig is in een Objecttypen API en dat deze correct geregistreerd is in de Objecten API. 
 Zie de documentatie (https://objects-and-objecttypes-api.readthedocs.io/en/latest/) voor instructies. 
 
