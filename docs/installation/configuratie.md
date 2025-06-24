@@ -47,7 +47,7 @@ ITA gaat ervan uit dat emailadressen van medewerkers en organisatorische eenhede
 | apiConnections.zaakSysteem.baseUrl |  https://uw-zaaksysteem-adres.nl |
 | apiConnections.zaakSysteem.clientId |   |
 | apiConnections.zaakSysteemKey |  min. 32 karakters |
-| logboek.type | De url van het logboek objecttype in de objecttypen api. zie [objecttypen](../objecttypen) for meer informatie  |
+| logboek.type | De url van het logboek objecttype in de objecttypen api. zie de objecttypen pagina in de documentatie for meer informatie  |
 | logboek.typeVersion |  De versie van het logboek objecttype dat gebruikt wordt (hoogstwaarschijnlijk 1) |
 
 
