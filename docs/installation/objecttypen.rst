@@ -13,34 +13,46 @@ Logboek objecttype
 .. code-block:: json
 
     {
-      "type": "object",
-      "title": "activiteitenlog",
-      "$schema": "http://json-schema.org/draft-07/schema#",
-      "examples": [],
-      "required": [
-        "heeftBetrekkingOp",
-        "activiteiten"
-      ],
-      "properties": {
-        "activiteiten": {
-          "type": "array",
-          "items": {
+  "type": "object",
+  "title": "activiteitenlog",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "examples": [],
+  "required": [
+    "heeftBetrekkingOp",
+    "activiteiten"
+  ],
+  "properties": {
+    "activiteiten": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "Activiteit",
+        "required": [
+          "datum",
+          "type",
+          "omschrijving"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "title": "Type",
+            "description": "Vaste waardes waarmee verschillende de soorten activiteiten herkend kunnen worden. Bijvoorbeeld: 'afsluiting' of 'toewijzing'"
+          },
+          "actor": {
             "type": "object",
-            "title": "Activiteit",
+            "title": "Actor",
             "required": [
-              "datum",
-              "type",
-              "omschrijving"
+              "actoridentificator"
             ],
             "properties": {
-              "type": {
+              "naam": {
                 "type": "string",
-                "title": "Type",
-                "description": "Vaste waardes waarmee verschillende de soorten activiteiten herkend kunnen worden. Bijvoorbeeld: 'afsluiting' of 'toewijzing'"
+                "title": "Naam",
+                "description": "Naam van de actor die deze activiteit aan het logboek heeft toegevoegd"
               },
-              "actor": {
+              "actoridentificator": {
                 "type": "object",
-                "title": "Actor",
+                "title": "Actoridentificator",
                 "required": [
                   "codeRegister",
                   "codeObjecttype",
@@ -50,7 +62,8 @@ Logboek objecttype
                 "properties": {
                   "objectId": {
                     "type": "string",
-                    "description": "De waarde van het veld, bijvoorbeeld: 'een.naam@degemeente.nl"
+                    "title": "Het id van de actor",
+                    "description": "De waarde van het in het codeSoortObjectId aangeduide veld, bijvoorbeeld: 'een.naam@degemeente.nl"
                   },
                   "codeRegister": {
                     "type": "string",
@@ -68,101 +81,103 @@ Logboek objecttype
                     "description": "Naam van het identificerende veld in het object, bijvoorbeeld: 'Id'."
                   }
                 },
-                "description": "Verwijzing naar de persoon die dit item aan deze log heeft toegevoegd"
-              },
-              "datum": {
-                "type": "string",
-                "title": "Datum",
-                "format": "date-time",
-                "description": "De datum waarop dit item is toegevoegd aan de log."
-              },
-              "notitie": {
-                "type": "string",
-                "title": "Notitie",
-                "description": "Informatie over deze activiteit"
-              },
-              "omschrijving": {
-                "type": "string",
-                "title": "Omschrijving",
-                "description": "Gebruiksvriendelijke informatieve omschrijving van de soort activiteit."
-              },
-              "heeftBetrekkingOp": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "title": "Object",
-                  "required": [
-                    "codeRegister",
-                    "codeObjecttype",
-                    "codeSoortObjectId",
-                    "objectId"
-                  ],
-                  "properties": {
-                    "objectId": {
-                      "type": "string",
-                      "description": "De waarde van het veld"
-                    },
-                    "codeRegister": {
-                      "type": "string",
-                      "title": "De naam van het register",
-                      "description": "Naam van het register waarin het object is geregistreerd, bijvoorbeeld: 'OpenKlant-v2'"
-                    },
-                    "codeObjecttype": {
-                      "type": "string",
-                      "title": "De naam van het soort object in het register",
-                      "description": "Type van het object, bijvoorbeeld Klantcontact"
-                    },
-                    "codeSoortObjectId": {
-                      "type": "string",
-                      "title": "De naam van het veld van het object",
-                      "description": "Naam van het identificerende veld in het object, bijvoorbeeld: 'id'."
-                    }
-                  },
-                  "description": "Verwijzing naar een object waar deze activiteit betrekking op heeft. Bijvoorbeeld een klantcontact of een medewerker"
-                },
-                "title": "heeftBetrekking op",
-                "description": "Lijst van objecten waar deze activiteit betrekking op heeft. Bijvoorbeeld een klantcontacten en medewerkers"
+                "description": "Een verwijzing naar de actor in het bronsysteem waarin deze is vastgelegd"
               }
             },
-            "description": "Activiteit"
+            "description": "Verwijzing naar de persoon die dit item aan deze log heeft toegevoegd"
           },
-          "title": "Activiteiten",
-          "description": "Lijst van activiteiten"
+          "datum": {
+            "type": "string",
+            "title": "Datum",
+            "format": "date-time",
+            "description": "De datum waarop dit item is toegevoegd aan de log."
+          },
+          "notitie": {
+            "type": "string",
+            "title": "Notitie",
+            "description": "Informatie over deze activiteit"
+          },
+          "omschrijving": {
+            "type": "string",
+            "title": "Omschrijving",
+            "description": "Gebruiksvriendelijke informatieve omschrijving van de soort activiteit."
+          },
+          "heeftBetrekkingOp": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "title": "Object",
+              "required": [
+                "codeRegister",
+                "codeObjecttype",
+                "codeSoortObjectId",
+                "objectId"
+              ],
+              "properties": {
+                "objectId": {
+                  "type": "string",
+                  "description": "De waarde van het veld"
+                },
+                "codeRegister": {
+                  "type": "string",
+                  "title": "De naam van het register",
+                  "description": "Naam van het register waarin het object is geregistreerd, bijvoorbeeld: 'OpenKlant-v2'"
+                },
+                "codeObjecttype": {
+                  "type": "string",
+                  "title": "De naam van het soort object in het register",
+                  "description": "Type van het object, bijvoorbeeld Klantcontact"
+                },
+                "codeSoortObjectId": {
+                  "type": "string",
+                  "title": "De naam van het veld van het object",
+                  "description": "Naam van het identificerende veld in het object, bijvoorbeeld: 'id'."
+                }
+              },
+              "description": "Verwijzing naar een object waar deze activiteit betrekking op heeft. Bijvoorbeeld een klantcontact of een medewerker"
+            },
+            "title": "heeftBetrekking op",
+            "description": "Lijst van objecten waar deze activiteit betrekking op heeft. Bijvoorbeeld een klantcontacten en medewerkers"
+          }
         },
-        "heeftBetrekkingOp": {
-          "type": "object",
-          "title": "Het object waar deze activiteitenlog betrekking op heeft",
-          "required": [
-            "codeRegister",
-            "codeObjecttype",
-            "codeSoortObjectId",
-            "objectId"
-          ],
-          "properties": {
-            "objectId": {
-              "type": "string",
-              "title": "De waarde in het bij codeSoortObjectId aangeduide veld ",
-              "description": "De waarde van het veld, bijvoorbeeld: '575fc9e4-a73c-495b-a8a1-1e718656e847'"
-            },
-            "codeRegister": {
-              "type": "string",
-              "title": "De naam van het register",
-              "description": "Naam van het register waarin het object is geregistreerd, bijvoorbeeld: 'OpenKlant'"
-            },
-            "codeObjecttype": {
-              "type": "string",
-              "title": "De naam van het soort object in het register",
-              "description": "Type van het object, bijvoorbeeld: internetaak"
-            },
-            "codeSoortObjectId": {
-              "type": "string",
-              "title": "De naam van het veld in het objecttype",
-              "description": "Naam van het identificerende veld in het object, bijvoorbeeld: 'uuid'"
-            }
-          },
-          "description": "Dit is een referentie naar het object waar deze activiteitenlog betrekking op heeft, bijvoorbeeld een interne taak"
+        "description": "Activiteit"
+      },
+      "title": "Activiteiten",
+      "description": "Lijst van activiteiten"
+    },
+    "heeftBetrekkingOp": {
+      "type": "object",
+      "title": "Het object waar deze activiteitenlog betrekking op heeft",
+      "required": [
+        "codeRegister",
+        "codeObjecttype",
+        "codeSoortObjectId",
+        "objectId"
+      ],
+      "properties": {
+        "objectId": {
+          "type": "string",
+          "title": "De waarde in het bij codeSoortObjectId aangeduide veld ",
+          "description": "De waarde van het veld, bijvoorbeeld: '575fc9e4-a73c-495b-a8a1-1e718656e847'"
+        },
+        "codeRegister": {
+          "type": "string",
+          "title": "De naam van het register",
+          "description": "Naam van het register waarin het object is geregistreerd, bijvoorbeeld: 'OpenKlant'"
+        },
+        "codeObjecttype": {
+          "type": "string",
+          "title": "De naam van het soort object in het register",
+          "description": "Type van het object, bijvoorbeeld: internetaak"
+        },
+        "codeSoortObjectId": {
+          "type": "string",
+          "title": "De naam van het veld in het objecttype",
+          "description": "Naam van het identificerende veld in het object, bijvoorbeeld: 'uuid'"
         }
-      }
-    }  
-
+      },
+      "description": "Dit is een referentie naar het object waar deze activiteitenlog betrekking op heeft, bijvoorbeeld een interne taak"
+    }
+  }
+}
                      
