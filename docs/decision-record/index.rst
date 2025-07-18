@@ -56,3 +56,12 @@ Contactverzoek sluiten
 * Keuze: Het contactverzoek krijgt, bij het afsluiten m.b.v. de knop "Opslaan & afronden", de status ``verwerkt``. Het verdwijnt daarmee uit alle lijsten van openstaande contactverzoeken. Als men het op een andere manier benadert (rechtstreeks via de url, of uit een lijst met gesloten contactverzoeken), dan kan je er op dit moment precies hetzelfde mee als met een openstaand contactverzoek.
 
 * Overwegingen: Scenario's waarbij men bijvoorbeeld per ongeluk het verkeerde contactmoment sluit, vergeet nog iets toe te voegen, achteraf een fout ontdekt, etc, zijn reëel. Het zou zeer onpraktisch zijn als men geen mogelijk had om een gesloten contactverzoek nog te kunnen bewerken.
+
+Tonen van de contactverzoeken die zijn toegewezen aan de ingelogde gebruiker
+----------------------------------------------------------------------------
+**Probleem**: Paginering is niet mogelijk. Een contactverzoek kan op meerdere manieren zijn toegewezen, waardoor er meerdere actoren kunnen bestaan voor de ingelogde gebruiker. De klantinteracties api biedt alleen de mogelijkheid om internetaken op te vragen op basis van één actor. We zouden dus apart per actor alle pagina's met internetaken op moeten halen en die lijsten samen moeten voegen en ordenen om daar vervolgens de gewenste pagina met contactverzoeken uit te destilleren. Dat zou de applicatie zeer traag maken.
+
+* Keuze: Voor nu halen we slechts de eerste pagina internetaken op per actor en maken daar een gecombineerde lijst van. Derhalve worden alleen de eerste honderd contactverzoeken per actor getoond. 
+
+* Overwegingen: Dit is een voorlopige oplossing in afwachting van en uitbreiding van de api. Voor openstaande contactverzoeken verwachten we niet dat het een probleem zal zijn. Het is onwaarschijnlijk dat iemand meer dan honderd openstaande contactverzoeken heeft. Voor het overzicht van afgeronde contactverzoeken is het mogelijk in de praktijk wel een beperking, maar dat is minder belangrijke data.
+
