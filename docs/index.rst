@@ -14,4 +14,5 @@ Op dit moment maakt ITA, met als KISS, gebruik van de Objectenregistratie voor i
 
    installation/index
    developers/index
+   manual/index
    decision-record/index
