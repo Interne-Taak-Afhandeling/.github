@@ -3,11 +3,11 @@
 Handleiding beheer
 =========================
 
-Achter de menu optie Beheer vindt men de onderdelen aan ITA die je kan beheren. Op dit moment is het alleen nog mogelijk om de lijst met kanalen te beheren.
+Achter de menu optie Beheer vindt men de onderdelen aan ITA die je kan beheren. Op dit moment is het alleen mogelijk om de lijst met kanalen te beheren.
 
 
 Beheer van kanalen
-------------------
+------------------__
 
 Op de pagina Kanalen, onder Beheer, kan je één of meer Kanalen aanmaken. Deze kanalen zijn nodig op het moment dat een medewerker wil registreren dat er contact is geweest met de burger: hierbij is het verplicht een kanaal aan te geven. 
 
@@ -20,4 +20,4 @@ Deze kanalen worden als tekst opgeslagen bij het Contactverzoek. Als je ITA gebr
 
 Het is niet mogelijk een kanaal te wijzigen. Als je dat wilt, moet je het kanaal verwijderen en opnieuw aanmaken. 
 
-De volgorde van de kanalen op deze pagina bepaalt ook de volgorde van de kanalen in het detailscherm van een contactverzoek. De volgorde van de kanalen is ook aan te passen, door kanalen te verwijderen en opnieuw toe te voegen, in een andere volgorde. 
+De volgorde van de kanalen op deze pagina bepaalt ook de volgorde van de kanalen in het detailscherm van een contactverzoek. De volgorde van de kanalen is ook aan te passen, door kanalen te verwijderen en opnieuw toe te voegen, in een andere volgorde. Zorg er daarbij wel voor dat je de schrijfwijze niet verandert.
