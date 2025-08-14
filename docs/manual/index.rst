@@ -18,7 +18,6 @@ Deze kanalen worden als tekst opgeslagen bij het Contactverzoek. Als je ITA gebr
 
 * Met het Plus-icoontje voeg je een kanaal toe: in het volgende scherm geef de naam van het kanaal op. Dit is ook de naam die verschijnt in het venster van een Contactverzoek. 
 * Met het prullenbakje achter een kanaal kun je een kanaal verwijderen. Er volgt een melding waarin je moet bevestigen dat je het Kanaal wilt verwijderen. 
+* Als je op een kanaal klikt kan je de naam wijzigen.
 
-Het is niet mogelijk een kanaal te wijzigen. Als je dat wilt, moet je het kanaal verwijderen en opnieuw aanmaken. 
-
-De volgorde van de kanalen op deze pagina bepaalt ook de volgorde van de kanalen in het detailscherm van een contactverzoek. De volgorde van de kanalen is ook aan te passen, door kanalen te verwijderen en opnieuw toe te voegen, in een andere volgorde. Zorg er daarbij wel voor dat je de schrijfwijze niet verandert.
+De volgorde van de kanalen op deze pagina bepaalt ook de volgorde van de kanalen in het detailscherm van een contactverzoek. De volgorde van de kanalen is aan te passen, door kanalen te verwijderen en opnieuw toe te voegen in een andere volgorde, of door de namen te wijzigen. Zorg er daarbij wel voor dat je de schrijfwijze niet verandert.
