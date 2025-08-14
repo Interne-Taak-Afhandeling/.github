@@ -5,7 +5,7 @@ ITA is een applicatie waarmee een organisatie contactverzoeken kan afhandelen. H
 
 ITA is een afkorting van Interne Taak Afhandeling. Dit is een verwijzing naar het object Interne Taak uit het Klantinteracties informatiemodel. Een Contactverzoek bestaat uit een `interneTaak` en het `klantcontact` dat leidde tot die `interneTaak`. 
 
-Op dit moment maakt ITA, met als KISS, gebruik van de Objectenregistratie voor informatie over Afdelingen, Groepen en Medewerkers. 
+Op dit moment maakt ITA, met als KISS, gebruik van de Objectenregistratie voor informatie over Afdelingen, Groepen en Medewerkers.  
 
 .. toctree::
    :caption: ITA Documentatie
@@ -14,4 +14,5 @@ Op dit moment maakt ITA, met als KISS, gebruik van de Objectenregistratie voor i
 
    installation/index
    developers/index
+   manual/index
    decision-record/index
