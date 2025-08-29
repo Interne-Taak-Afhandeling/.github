@@ -49,10 +49,10 @@ ITA gaat ervan uit dat emailadressen van medewerkers en organisatorische eenhede
 | apiConnections.zaakSysteemKey          |  min. 32 karakters  |
 | logboek.type                           | De url van het logboek objecttype in de objecttypen api. zie de objecttypen pagina in de documentatie for meer informatie  |
 | logboek.typeVersion                    | De versie van het logboek objecttype dat gebruikt wordt (hoogstwaarschijnlijk 1) |
-| afdeling.type                          | De url van het afdeling objecttype in de objecttypen api. zie de objecttypen pagina in de documentatie for meer informatie  |
-| afdeling.typeVersion                   | De versie van het afdeling objecttype dat gebruikt wordt (hoogstwaarschijnlijk 1) |
-| groep.type                             | De url van het groep objecttype in de objecttypen api. zie de objecttypen pagina in de documentatie for meer informatie  |
-| groep.typeVersion                      | De versie van het groep objecttype dat gebruikt wordt (hoogstwaarschijnlijk 1) |
+| afdeling.type                          | De url van het afdeling objecttype in de objecttypen api. |
+| afdeling.typeVersion                   | De versie van het afdeling objecttype dat gebruikt wordt (waarschijnlijk 1) |
+| groep.type                             | De url van het groep objecttype in de objecttypen api.   |
+| groep.typeVersion                      | De versie van het groep objecttype dat gebruikt wordt (waarschijnlijk 1) |
 
 Database configuratie
 ---------------------------------
