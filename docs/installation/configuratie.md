@@ -5,28 +5,28 @@ Omgevingsvariabelen
 
 OpenID Connect settings
 ---------------------------------
-| **Variabele**                      | **Waarde**                                                                                                  |
-|------------------------------------|----------------------------------------------------------------------------------------------------------|
-| web.oidc.authority            | URL van de OpenID Connect Identity Provider <details> <summary>Meer informatie </summary>Bijvoorbeeld: `https://login.microsoftonline.com/ce1a3f2d-2265-4517-a8b4-3e4f381461ab/v2.0` </details>         |
-| web.oidc.clientId            | Voor toegang tot de OpenID Connect Identity Provider <details> <summary>Meer informatie </summary>Bijvoorbeeld: `54f66f54-71e5-45f1-8634-9158c41f602a` </details>  |
-| web.oidc.clientSecret            | Secret voor de OpenID Connect Identity Provider <details> <summary>Meer informatie </summary>Bijvoorbeeld: `VM2B!ccnebNe.M*gxH63*NXc8iTiAGhp` </details>    |
-| web.oidc.itaSystemAccessRole            | De waarde van de role claim in het JWT token van de OpenID Connect Provider voor toegang tot ITA <details> <summary>Meer informatie </summary>Bijvoorbeeld: `ITA-Gebruiker` </details>     |
-| web.oidc.nameClaimType            | De naam van de claim in het JWT token van de OpenID Connect Provider waarin de volledige naam van de ingelogde gebruiker staat <br/> (default waarde is `name`) |
-| web.oidc.roleClaimType            | De naam van de claim in het JWT token van de OpenID Connect Provider waarin de rollen van de ingelogde gebruiker staan. <br/> (default waarde is `roles`)  |
+| **Variabele**                                           | **Waarde**                                                                                                  |
+|---------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| web.oidc.authority                                      | URL van de OpenID Connect Identity Provider <details> <summary>Meer informatie </summary>Bijvoorbeeld: `https://login.microsoftonline.com/ce1a3f2d-2265-4517-a8b4-3e4f381461ab/v2.0` </details>         |
+| web.oidc.clientId                                       | Voor toegang tot de OpenID Connect Identity Provider <details> <summary>Meer informatie </summary>Bijvoorbeeld: `54f66f54-71e5-45f1-8634-9158c41f602a` </details>  |
+| web.oidc.clientSecret                                   | Secret voor de OpenID Connect Identity Provider <details> <summary>Meer informatie </summary>Bijvoorbeeld: `VM2B!ccnebNe.M*gxH63*NXc8iTiAGhp` </details>    |
+| web.oidc.itaSystemAccessRole                            | De waarde van de role claim in het JWT token van de OpenID Connect Provider voor toegang tot ITA <details> <summary>Meer informatie </summary>Bijvoorbeeld: `ITA-Gebruiker` </details>     |
+| web.oidc.nameClaimType                                  | De naam van de claim in het JWT token van de OpenID Connect Provider waarin de volledige naam van de ingelogde gebruiker staat <br/> (default waarde is `name`) |
+| web.oidc.roleClaimType                                  | De naam van de claim in het JWT token van de OpenID Connect Provider waarin de rollen van de ingelogde gebruiker staan. <br/> (default waarde is `roles`)  |
 | web.oidc.objectregisterMedewerkerIdClaimType            | De naam van de claim in het JWT token van de OpenID Connect Provider waarin een unieke identificatie van de ingelogde gebruiker staat die overeenkomt met het attribuut `identificatie` van de medewerker in het Medewerkersregister in OverigeObjecten. <br/><br/>In de meeste gevallen zal hier waarschijnlijk 'email' voor gebruikt worden. <br/>Dit gegeven wordt gebruikt om Contactverzoeken te vinden die zijn toegewezen aan de ingelogde gebruiker en om Contactverzoeken te vinden die zijn toegewezen aan de afdelingen en groepen van de ingelogde gebruiker.  |
-| web.oidc.emailClaimType            | De naam van de claim in het JWT token van de OpenID Connect Provider waarin het e-mailadres van de ingelogde gebruiker staat. <br/> (default waarde is `email`)   |
+| web.oidc.emailClaimType                                 | De naam van de claim in het JWT token van de OpenID Connect Provider waarin het e-mailadres van de ingelogde gebruiker staat. <br/> (default waarde is `email`)   |
 
 Notificatie settings
 ---------------------------------
 
-| **Variabele**                      | **Waarde**                                                                                                  |
-|------------------------------------|----------------------------------------------------------------------------------------------------------|
-| poller.smtp.host            | Adres van uw mailserver                                                                                  |
-| poller.smtp.port            | De poort waarover van uw mailserver benaderbaar is                                                      |
-| poller.smtp.username        | Credentials voor toegang tot uw mailserver                                                               |
-| poller.smtp.password        | Credentials voor toegang tot uw mailserver                                                               |
-| poller.smtp.enableSsl       | true/false                                                                                                |
-| poller.smtp.fromEmail       | Afzenderadres voor mails die door ITA verstuurd worden                                                   |
+| **Variabele**        | **Waarde**                                                                                               |
+|----------------------|----------------------------------------------------------------------------------------------------------|
+| smtp.host            | Adres van uw mailserver                                                                                  |
+| smtp.port            | De poort waarover van uw mailserver benaderbaar is                                                       |
+| smtp.username        | Credentials voor toegang tot uw mailserver                                                               |
+| smtp.password        | Credentials voor toegang tot uw mailserver                                                               |
+| smtp.enableSsl       | true/false                                                                                               |
+| smtp.fromEmail       | Afzenderadres voor mails die door ITA verstuurd worden                                                   |
 
 
  
@@ -38,32 +38,35 @@ ITA gaat ervan uit dat emailadressen van medewerkers en organisatorische eenhede
 - groep: https://github.com/open-objecten/objecttypes/blob/main/community-concepts/Afdeling%20en%20Groep/groep-schema.json
 - afdeling:  https://github.com/open-objecten/objecttypes/blob/main/community-concepts/Afdeling%20en%20Groep/afdeling-schema.json
 
-| **Variabele**                      | **Waarde**                                                                                                  |
-|------------------------------------|----------------------------------------------------------------------------------------------------------|
-| apiConnections.objectApi.baseUrl | https://uw-overige-objecten-adres.nl/api/v2/  |
-| apiConnections.objectApiKey | min. 32 karakters  |
-| apiConnections.openKlantApi.baseUrl | https://uw-openklant-adres/klantinteracties/api/v1/  |
-| apiConnections.openKlantApiKey | min. 32 karakters  |
-| apiConnections.zaakSysteem.baseUrl |  https://uw-zaaksysteem-adres.nl |
-| apiConnections.zaakSysteem.clientId |   |
-| apiConnections.zaakSysteemKey |  min. 32 karakters |
-| logboek.type | De url van het logboek objecttype in de objecttypen api. zie de objecttypen pagina in de documentatie for meer informatie  |
-| logboek.typeVersion |  De versie van het logboek objecttype dat gebruikt wordt (hoogstwaarschijnlijk 1) |
-
+| **Variabele**                          | **Waarde**                                                                                                  |
+|----------------------------------------|----------------------------------------------------------------------------------------------------------|
+| apiConnections.objectApi.baseUrl       | https://uw-overige-objecten-adres.nl/api/v2/  |
+| apiConnections.objectApiKey            | min. 32 karakters  |
+| apiConnections.openKlantApi.baseUrl    | https://uw-openklant-adres/klantinteracties/api/v1/  |
+| apiConnections.openKlantApiKey         | min. 32 karakters  |
+| apiConnections.zaakSysteem.baseUrl     |  https://uw-zaaksysteem-adres.nl |
+| apiConnections.zaakSysteem.clientId    |   |
+| apiConnections.zaakSysteemKey          |  min. 32 karakters  |
+| logboek.type                           | De url van het logboek objecttype in de objecttypen api. zie de objecttypen pagina in de documentatie for meer informatie  |
+| logboek.typeVersion                    | De versie van het logboek objecttype dat gebruikt wordt (hoogstwaarschijnlijk 1) |
+| afdeling.type                          | De url van het afdeling objecttype in de objecttypen api. zie de objecttypen pagina in de documentatie for meer informatie  |
+| afdeling.typeVersion                   | De versie van het afdeling objecttype dat gebruikt wordt (hoogstwaarschijnlijk 1) |
+| groep.type                             | De url van het groep objecttype in de objecttypen api. zie de objecttypen pagina in de documentatie for meer informatie  |
+| groep.typeVersion                      | De versie van het groep objecttype dat gebruikt wordt (hoogstwaarschijnlijk 1) |
 
 Database configuratie
 ---------------------------------
-| **Variabele**                      | **Waarde**                                                                                                  |
-|------------------------------------|----------------------------------------------------------------------------------------------------------|
-| database.name            | Naam van de database voor ITA                                                         |
-| database.username        | Gebruikersnaam voor toegang tot de database                                           |
-| database.password        | Wachtwoord voor toegang tot de database                                               |
+| **Variabele**            | **Waarde**                                                                                  |
+|--------------------------|---------------------------------------------------------------------------------------------|
+| database.name            | Naam van de database voor ITA                                                               |
+| database.username        | Gebruikersnaam voor toegang tot de database                                                 |
+| database.password        | Wachtwoord voor toegang tot de database                                                     |
 | database.host            | Hostnaam van de database server *(optioneel - alleen nodig als `postgresql.enabled=false`)* |
 
 Theming
 ------------------
 
-| Variabele                       | Omschrijving |
+| Variabele                      | Omschrijving |
 |--------------------------------|--------------|
 | web.resources.logoUrl          | Publieke URL waar het logo van de gemeente beschikbaar is, bijvoorbeeld: `https://www.mijn-gemeente.nl/logo.svg` |
 | web.resources.faviconUrl       | Publieke URL waar het favicon van de gemeente beschikbaar is, bijvoorbeeld: `https://www.mijn-gemeente.nl/favicon.ico` |
