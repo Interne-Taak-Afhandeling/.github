@@ -27,6 +27,7 @@ Notificatie settings
 | smtp.password        | Credentials voor toegang tot uw mailserver                                                               |
 | smtp.enableSsl       | true/false                                                                                               |
 | smtp.fromEmail       | Afzenderadres voor mails die door ITA verstuurd worden                                                   |
+| ita.baseUrl          | De base URL van de ITA website, gebruikt voor deeplinks in email notificaties naar contactverzoeken. Bijvoorbeeld: `https://itawebsite.nl` |
 
 
  
