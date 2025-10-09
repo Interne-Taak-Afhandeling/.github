@@ -1,7 +1,8 @@
-.. _config_omgevingsvariabelen:
 
 Omgevingsvariabelen
 ===================
+
+**Alle variabelen zijn verplicht, tenzij anders vermeld.** 
 
 OpenID Connect settings
 ---------------------------------
@@ -67,6 +68,8 @@ Database configuratie
 Theming
 ------------------
 
+Deze theming variabelen zijn allemaal optioneel.
+
 | Variabele                      | Omschrijving |
 |--------------------------------|--------------|
 | web.resources.logoUrl          | Publieke URL waar het logo van de gemeente beschikbaar is, bijvoorbeeld: `https://www.mijn-gemeente.nl/logo.svg` |
@@ -75,4 +78,4 @@ Theming
 | web.resources.webFontSources   | Publieke URL – of meerdere publieke URL's – als verwijzing naar web-font-bestand(en) horend bij de gemeentehuisstijl, bijvoorbeeld: `['https://fonts.mijn-gemeente.nl/custom-regular-font.woff2', 'https://fonts.mijn-gemeente.nl/custom-bold-font.woff2']`. Een enkele verwijzing naar de locatie waar alle font-style-bestanden staan kan ook: `['https://fonts.mijn-gemeente.nl/custom-font/']`. **Let op:** deze configuratie is alleen bedoeld om de font-bestanden onder CORS te kunnen inladen. Verwijzingen naar bestanden zullen ook in de theme styling onder een `@font-face` ruleset gespecificeerd moeten worden. |
 
 
-Deze theming variabelen zijn allemaal optioneel.
+
