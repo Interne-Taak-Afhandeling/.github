@@ -4,7 +4,7 @@ Handleiding beheer
 =========================
 
 Achter de menu optie Beheer vindt men de onderdelen aan ITA die je kan beheren. Op dit moment is het alleen mogelijk om de lijst met kanalen te beheren.
-De menu optie Beheer is alleen beschikbaar voor gebruikers die naast de standaard toegangrol voor ITA, óók de beheerrol hebben. Zie ook :ref:`de omgevingsvariabelen </installation/configuratie.md>`.
+De menu optie Beheer is alleen beschikbaar voor gebruikers die naast de standaard toegangrol voor ITA, óók de beheerrol hebben. Zie ook de lijst omgevingsvariabelen bij Installatie.
 
 
 Beheer van kanalen
