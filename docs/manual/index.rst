@@ -4,11 +4,11 @@ Handleiding beheer
 =========================
 
 Achter de menu optie Beheer vindt men de onderdelen aan ITA die je kan beheren. Op dit moment is het alleen mogelijk om de lijst met kanalen te beheren.
+De menu optie Beheer is alleen beschikbaar voor gebruikers die naast de standaard toegangrol voor ITA, óók de beheerrol hebben. Zie ook de lijst omgevingsvariabelen bij Installatie.
 
 
 Beheer van kanalen
 --------------------
-
 
 Op de pagina Kanalen, onder Beheer, kan je één of meer Kanalen aanmaken. Deze kanalen zijn nodig op het moment dat een medewerker wil registreren dat er contact is geweest met de burger: hierbij is het verplicht een kanaal aan te geven. 
 
